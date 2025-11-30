@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === BASE STYLES === */
+
+/* Ensure html/body fill viewport without overflow */
+html, body {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Hide scrollbar for horizontal scroll on category filters */
+.overflow-x-auto::-webkit-scrollbar {
+  height: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: rgba(15, 155, 149, 0.3);
+  border-radius: 2px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 155, 149, 0.6);
+}
+
+/* Gradient animé pour les titres */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glow effect pour les éléments */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(15, 155, 149, 0.5), 0 0 10px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(15, 155, 149, 0.8), 0 0 30px rgba(59, 130, 246, 0.6);
+  }
+}
+
+/* Float animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Pulse de couleur */
+@keyframes color-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Glow de texte */
+@keyframes text-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(15, 155, 149, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(15, 155, 149, 0.8), 0 0 30px rgba(59, 130, 246, 0.6);
+  }
+}
+
+/* Bounce animé */
+@keyframes bounce-soft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Slide in from left */
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from right */
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Border glow */
+@keyframes border-glow {
+  0% {
+    border-color: rgba(15, 155, 149, 0.3);
+    box-shadow: 0 0 5px rgba(15, 155, 149, 0.2);
+  }
+  50% {
+    border-color: rgba(15, 155, 149, 0.8);
+    box-shadow: 0 0 15px rgba(15, 155, 149, 0.6);
+  }
+  100% {
+    border-color: rgba(15, 155, 149, 0.3);
+    box-shadow: 0 0 5px rgba(15, 155, 149, 0.2);
+  }
+}
+
+/* === CLASSES UTILITAIRES === */
+
+.animate-gradient-shift {
+  animation: gradient-shift 3s ease infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+.animate-color-pulse {
+  animation: color-pulse 2s ease-in-out infinite;
+}
+
+.animate-text-glow {
+  animation: text-glow 2s ease-in-out infinite;
+}
+
+.animate-bounce-soft {
+  animation: bounce-soft 2s ease-in-out infinite;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out;
+}
+
+.animate-border-glow {
+  animation: border-glow 2s ease-in-out infinite;
+}
+
+/* === EFFETS SPÉCIAUX === */
+
+/* Gradient background animé */
+.gradient-bg-animated {
+  background: linear-gradient(
+    -45deg,
+    #0f9b95,
+    #3b82f6,
+    #1e40af,
+    #0f9b95
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Glow button effect */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.btn-glow:hover::before {
+  left: 100%;
+}
+
+/* Card with 3D perspective */
+.card-3d {
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.card-3d:hover {
+  transform: rotateY(5deg) rotateX(5deg);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background-color: rgba(15, 155, 149, 0.3);
+  color: inherit;
+}
