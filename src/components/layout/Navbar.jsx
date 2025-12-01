@@ -17,9 +17,9 @@ export default function Navbar() {
   const t = translations[language];
 
   const languages = [
-    { code: 'fr', label: 'Français', short: 'FR', flagSrc: './images/flags/fr.png' },
-    { code: 'en', label: 'English', short: 'EN', flagSrc: './images/flags/en.png' },
-    { code: 'ar', label: 'العربية', short: 'AR', flagSrc: './images/flags/tn.png' },
+    { code: 'fr', label: 'Français', short: 'FR', flagSrc: '/devpack-website/images/flags/fr.png' },
+    { code: 'en', label: 'English', short: 'EN', flagSrc: '/devpack-website/images/flags/en.png' },
+    { code: 'ar', label: 'العربية', short: 'AR', flagSrc: '/devpack-website/images/flags/tn.png' },
   ];
 
   useEffect(() => {
