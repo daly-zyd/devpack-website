@@ -112,21 +112,21 @@ export default function About() {
   const facilityImages = [
     {
       id: '1',
-      src: 'http://www.devpack.com.tn/static/media/boucherie.2774d45f.webp',
+      src: './images/products/boucherie.webp',
       alt: t.about.butcher,
       title: t.about.butcher,
       description: t.about.butcherDesc,
     },
     {
       id: '2',
-      src: 'http://www.devpack.com.tn/static/media/datte.796384de.webp',
+      src: './images/products/datte.webp',
       alt: t.about.fresh,
       title: t.about.fresh,
       description: t.about.freshDesc,
     },
     {
       id: '3',
-      src: 'http://www.devpack.com.tn/static/media/bio.f99d3789.webp',
+      src: './images/products/bio.webp',
       alt: t.about.organic,
       title: t.about.organic,
       description: t.about.organicDesc,
