@@ -313,7 +313,7 @@ export default function About() {
             >
               <div className="relative rounded-2xl overflow-hidden border border-teal-500/20">
                 <img
-                  src="images/partenaire.jpg"
+                  src="/devpack-website/images/partenaire.jpg"
                   alt="DevPack Facilities"
                   className="w-full h-auto object-cover rounded-2xl"
                 />

@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
           <div className="space-y-4">
             <img
-              src="/devpack_logo.png"
+              src="/devpack-website/devpack_logo.png"
               alt="DevPack Logo"
               className="h-10 w-auto"
             />

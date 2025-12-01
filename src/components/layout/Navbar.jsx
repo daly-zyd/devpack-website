@@ -71,7 +71,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center group">
             <img
-              src="/Logo_DevPack.png"
+              src="/devpack-website/Logo_DevPack.png"
               alt="DevPack Logo"
               className={`h-14 w-auto hover:drop-shadow-lg transition-all duration-300 rounded-lg p-1 ${
                 isDark ? 'bg-slate-800' : ''
