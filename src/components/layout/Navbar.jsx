@@ -16,10 +16,10 @@ export default function Navbar() {
   const { language, toggleLanguage } = useLanguage();
   const t = translations[language];
 
-  const languageOptions = [
-    { code: 'fr', label: 'Français', short: 'FR', flagSrc: '/images/flags/fr.png' },
-    { code: 'en', label: 'English', short: 'EN', flagSrc: '/images/flags/en.png' },
-    { code: 'ar', label: 'العربية', short: 'AR', flagSrc: '/images/flags/tn.png' },
+  const languages = [
+    { code: 'fr', label: 'Français', short: 'FR', flagSrc: './images/flags/fr.png' },
+    { code: 'en', label: 'English', short: 'EN', flagSrc: './images/flags/en.png' },
+    { code: 'ar', label: 'العربية', short: 'AR', flagSrc: './images/flags/tn.png' },
   ];
 
   useEffect(() => {

@@ -156,7 +156,7 @@ export default function Products() {
           {filtered.map((p) => (
             <motion.article key={p.id} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="rounded-2xl overflow-hidden bg-white dark:bg-slate-900 border border-gray-200 dark:border-teal-500/20 shadow-sm">
               <div className="h-40 sm:h-44 bg-gray-100 dark:bg-slate-800 flex items-center justify-center">
-                <img src={p.image} alt={p.title} loading="lazy" className="object-cover w-full h-40 sm:h-44" onError={(e) => { e.currentTarget.src = '/images/placeholder.png'; }} />
+                <img src={p.image} alt={p.title} loading="lazy" className="object-cover w-full h-40 sm:h-44" onError={(e) => { e.currentTarget.src = './images/placeholder.png'; }} />
               </div>
               <div className="p-4 sm:p-5">
                 <div className="flex items-start justify-between gap-2">

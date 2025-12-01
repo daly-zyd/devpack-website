@@ -5,7 +5,7 @@ import useAutoCarousel from '../../hooks/useAutoCarousel';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 
-const images = Array.from({ length: 14 }, (_, i) => `/images/refs/${i + 1}.png`);
+const images = Array.from({ length: 14 }, (_, i) => `./images/refs/${i + 1}.png`);
 
 export default function ReferencesCarousel() {
   const { index, setIndex, isPaused, setIsPaused, prev, next, prefersReducedMotion } = useAutoCarousel(images.length, { delay: 4000 });
