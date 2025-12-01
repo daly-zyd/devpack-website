@@ -136,7 +136,7 @@ export default function Navbar() {
                     exit={{ opacity: 0, y: -10 }}
                     className="absolute right-0 mt-2 w-40 bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-lg shadow-xl z-50"
                   >
-                    {languageOptions.map((lang) => (
+                    {languages.map((lang) => (
                       <button
                         key={lang.code}
                         onClick={() => {
@@ -247,7 +247,7 @@ export default function Navbar() {
                           exit={{ opacity: 0, y: -10 }}
                           className="absolute right-0 mt-2 w-40 bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-lg shadow-xl z-50"
                         >
-                          {languageOptions.map((lang) => (
+                          {languages.map((lang) => (
                             <button
                               key={lang.code}
                               onClick={() => {

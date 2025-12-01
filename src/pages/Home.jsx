@@ -101,14 +101,14 @@ export default function Home() {
       title: t.home.boxOeufs,
       description: t.home.boxOeufsDesc,
       gradient: 'from-teal-500 to-blue-600',
-      image: 'https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=800&h=600&fit=crop',
+      image: './images/categories/egg-containers.jpg',
       icon: Package,
     },
     {
       title: t.home.barquettes,
       description: t.home.barquettesDesc,
       gradient: 'from-blue-600 to-blue-700',
-      image: 'https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=800&h=600&fit=crop',
+      image: './images/products/standard.jpg',
       icon: Package,
     },
   ];
