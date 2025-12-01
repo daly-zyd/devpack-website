@@ -17,9 +17,9 @@ export default function Navbar() {
   const t = translations[language];
 
   const languages = [
-    { code: 'fr', label: 'Français', short: 'FR', flagSrc: '/devpack-website/images/flags/fr.png' },
-    { code: 'en', label: 'English', short: 'EN', flagSrc: '/devpack-website/images/flags/en.png' },
-    { code: 'ar', label: 'العربية', short: 'AR', flagSrc: '/devpack-website/images/flags/tn.png' },
+    { code: 'fr', label: 'Français', short: 'FR', flagSrc: './images/flags/fr.png' },
+    { code: 'en', label: 'English', short: 'EN', flagSrc: './images/flags/en.png' },
+    { code: 'ar', label: 'العربية', short: 'AR', flagSrc: './images/flags/tn.png' },
   ];
 
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center group">
             <img
-              src="/devpack-website/Logo_DevPack.png"
+              src="./Logo_DevPack.png"
               alt="DevPack Logo"
               className={`h-14 w-auto hover:drop-shadow-lg transition-all duration-300 rounded-lg p-1 ${
                 isDark ? 'bg-slate-800' : ''
